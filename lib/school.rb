@@ -21,11 +21,10 @@ attr_accessor :name, :roster
   end
   
   def sort
-   # sorted_hash = {}
     @roster.each do |grade, name|
       @roster[grade] = name.sort
     end
-    return @roster
+   # return @roster
   end
   
 end
