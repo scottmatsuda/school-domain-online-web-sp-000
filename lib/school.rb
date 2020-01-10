@@ -8,7 +8,9 @@ attr_accessor :name, :roster
   end
   
   def add_student(name, grade)
-    @roster[grade] = []
+    students = []
+    @roster[grade] = students
+    students << name
     @roster[grade] << name
   end
 end
