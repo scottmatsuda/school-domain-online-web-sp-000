@@ -12,7 +12,8 @@ attr_accessor :name, :roster
     if @roster[grade]
       @roster[grade] = []
       @roster[grade] << [name]
-    else @roster[grade] << [name]
+    else 
+      @roster[grade] = [name]
       
     end
   end
