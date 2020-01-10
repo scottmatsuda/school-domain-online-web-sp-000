@@ -10,7 +10,7 @@ attr_accessor :name, :roster
   def add_student(name, grade)
     
     if @roster[grade]
-      @roster[grade] = [name]
+      @roster[grade].push(name)
       
     else 
       @roster[grade] = []
