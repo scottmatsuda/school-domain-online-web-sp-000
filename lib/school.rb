@@ -20,4 +20,8 @@ attr_accessor :name, :roster
     return @roster[grade]
   end
   
+  def sort 
+    return @roster[grade].sort
+  end
+  
 end
