@@ -23,7 +23,9 @@ attr_accessor :name, :roster
   def sort(grade)
     sorted_hash = {}
     @roster.each do |grade, name|
-      
+      sorted_hash[grade] = name.sort
+    end
+    return sorted_hash
   end
   
 end
