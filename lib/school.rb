@@ -10,9 +10,9 @@ attr_accessor :name, :roster
   def add_student(name, grade)
     students = []
     if @roster[grade]
-      @roster[grade] = students
+      @roster[grade] = []
       students << name
-      @roster[grade].push(name)
+      @roster[grade] = students
     else @roster[grade] = students
       students << name
       @roster[grade] = students
