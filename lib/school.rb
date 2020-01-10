@@ -24,7 +24,7 @@ attr_accessor :name, :roster
     @roster.each do |grade, name|
       @roster[grade] = name.sort
     end
-   # return @roster
+    @roster
   end
   
 end
